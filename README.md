@@ -49,13 +49,13 @@ graph TB
     
     L --> M[✅ Markdown Output<br/>Tables & Recommendations]
     
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style G fill:#ffe1f5
-    style M fill:#e1ffe1
-    style D fill:#f0f0f0
-    style E fill:#f0f0f0
+    style A fill:#e1f5ff,color:#000
+    style B fill:#fff4e1,color:#000
+    style C fill:#ffe1f5,color:#000
+    style G fill:#ffe1f5,color:#000
+    style M fill:#e1ffe1,color:#000
+    style D fill:#f0f0f0,color:#000
+    style E fill:#f0f0f0,color:#000
 ```
 
 **Flow Overview:**
