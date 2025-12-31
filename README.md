@@ -199,9 +199,6 @@ Contributions are welcome! Here's how you can help:
 - Run `pip install -r requirements.txt` again
 - Ensure you're using Python 3.10+
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -209,11 +206,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Serper](https://serper.dev) for web search capabilities
 - OpenAI for GPT models
 
-## 📞 Contact
-
-**Project Link**: [https://github.com/iitsh/PriceHunter-AI](https://github.com/iitsh/PriceHunter-AI)
-
----
 
 <div align="center">
 
