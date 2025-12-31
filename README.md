@@ -23,6 +23,48 @@ PriceHunter-AI deploys a team of specialized AI agents:
 1. **🔍 Price Searcher Agent**: Scours the web to find at least 5 vendors selling your desired product, extracting prices and direct links
 2. **💼 Purchase Advisor Agent**: Analyzes findings and generates a detailed comparison report with smart recommendations
 
+### 🏛️ System Architecture
+
+```mermaid
+graph TB
+    A[👤 User Input<br/>Product Name] --> B[🤖 CrewAI Orchestrator]
+    
+    B --> C[🔍 Price Searcher Agent]
+    C --> D[🌐 Serper API<br/>Web Search]
+    C --> E[🕷️ ScrapeWebsiteTool<br/>Extract Data]
+    
+    D --> F[📦 Vendor Data<br/>5+ Sources]
+    E --> F
+    
+    F --> G[💼 Purchase Advisor Agent]
+    
+    G --> H[📊 Analysis Engine]
+    H --> I[💰 Price Comparison]
+    H --> J[⭐ Reliability Rating]
+    H --> K[🎯 Best Deal Selection]
+    
+    I --> L[📋 Final Report]
+    J --> L
+    K --> L
+    
+    L --> M[✅ Markdown Output<br/>Tables & Recommendations]
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#ffe1f5
+    style G fill:#ffe1f5
+    style M fill:#e1ffe1
+    style D fill:#f0f0f0
+    style E fill:#f0f0f0
+```
+
+**Flow Overview:**
+1. User specifies product → CrewAI initializes agent workflow
+2. Price Searcher Agent searches web and scrapes vendor sites
+3. Collected data passes to Purchase Advisor Agent
+4. Advisor analyzes prices, rates reliability, identifies best deals
+5. System generates formatted report with recommendations
+
 ## ✨ Features
 
 - 🤖 **Autonomous Multi-Agent System**: Powered by CrewAI for intelligent task coordination
@@ -53,6 +95,10 @@ git clone https://github.com/iitsh/PriceHunter-AI.git
 cd PriceHunter-AI
 ```
 
+2. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
 
 3. **Configure environment variables**
 
@@ -199,13 +245,13 @@ Contributions are welcome! Here's how you can help:
 - Run `pip install -r requirements.txt` again
 - Ensure you're using Python 3.10+
 
-
 ## 🙏 Acknowledgments
 
 - [CrewAI](https://github.com/joaomdmoura/crewAI) for the amazing multi-agent framework
 - [Serper](https://serper.dev) for web search capabilities
 - OpenAI for GPT models
 
+---
 
 <div align="center">
 
